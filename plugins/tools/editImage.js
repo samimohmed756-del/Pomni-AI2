@@ -6,7 +6,7 @@ const client = axios.create({
 });
 
 const validRatios = ["1:1", "16:9", "3:2", "2:3", "4:5", "5:4", "9:16", "3:4", "4:3", "custom"];
-
+// upload image in imgbb
 async function uploadToImgbb(buffer) {
   const formData = new FormData();
   formData.append('source', buffer, { filename: `image-${Date.now()}.jpg` });
